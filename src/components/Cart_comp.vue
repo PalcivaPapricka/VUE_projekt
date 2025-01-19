@@ -1,32 +1,30 @@
 <script lang="ts">
-import { defineComponent, computed } from 'vue';
+import { defineComponent } from 'vue';
 import { useCartStore } from '../stores/counter.ts'; // Import Pinia store
 
 export default defineComponent({
   name: 'Cart_comp',
-  setup() {
+  data() {
     const cartStore = useCartStore();
-
-    const cartItems = computed(() => cartStore.items);
-
-    const totalPrice = computed(() =>
-        cartItems.value.reduce((total, item) => total + item.price * item.quantity, 0)
-    );
-
-    const incrementItem = (item: { id: number; price: number }) => {
-      cartStore.incrementItem(item);
-    };
-
-    const decrementItem = (item: { id: number; price: number }) => {
-      cartStore.decrementItem(item);
-    };
-
     return {
-      cartItems,
-      totalPrice,
-      incrementItem,
-      decrementItem,
+      cartStore,
     };
+  },
+  computed: {
+    cartItems() {
+      return this.cartStore.items;
+    },
+    totalPrice() {
+      return this.cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+    },
+  },
+  methods: {
+    incrementItem(item: { id: number; price: number }) {
+      this.cartStore.incrementItem(item);
+    },
+    decrementItem(item: { id: number; price: number }) {
+      this.cartStore.decrementItem(item);
+    },
   },
 });
 </script>

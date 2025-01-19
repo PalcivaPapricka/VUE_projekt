@@ -1,4 +1,6 @@
-import { defineStore } from 'pinia';
+import { defineStore } from 'pinia'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+
 export const useCartStore = defineStore('cart', {
   state: () => ({
     items: [] as Array<{
@@ -18,11 +20,11 @@ export const useCartStore = defineStore('cart', {
         this.items.push({ ...item, quantity: 1 });
       }
     },
-    incrementItem(item: { id: number; quantity: number }) {
+    incrementItem(item: { id: number; name: string; quantity: number }) {
       const cartItem = this.items.find((i) => i.name === item.name);
       if (cartItem) cartItem.quantity++;
     },
-    decrementItem(item: { id: number; quantity: number }) {
+    decrementItem(item: { id: number; name: string; quantity: number }) {
       const cartItem = this.items.find((i) => i.name === item.name);
       if (cartItem && cartItem.quantity > 1) {
         cartItem.quantity--;
@@ -30,8 +32,11 @@ export const useCartStore = defineStore('cart', {
         this.removeFromCart(item);
       }
     },
-    removeFromCart(item: { id: number }) {
+    removeFromCart(item: { id: number; name: string }) {
       this.items = this.items.filter((i) => i.name !== item.name);
     },
   },
+  persist: true,
 });
+
+

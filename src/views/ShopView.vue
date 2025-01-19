@@ -8,16 +8,16 @@ export default defineComponent({
   components: {
     Filaments,
   },
-  setup() {
+  data() {
     const cartStore = useCartStore();
-
-    const handleAddToCart = (filament: { id: number; name: string; price: number; image: string }) => {
-      cartStore.addItem(filament);
-    };
-
     return {
-      handleAddToCart,
+      cartStore,
     };
+  },
+  methods: {
+    handleAddToCart(filament: { id: number; name: string; price: number; image: string }) {
+      this.cartStore.addItem(filament);
+    },
   },
 });
 </script>

@@ -1,34 +1,33 @@
 <script lang="ts">
-import { defineComponent, computed } from 'vue';
+import { defineComponent } from 'vue';
 import { useCartStore } from '../stores/counter.ts';
+
 export default defineComponent({
   name: 'CartView',
-  setup() {
+  data() {
     const cartStore = useCartStore();
-
-    const cartItems = computed(() => cartStore.items);
-    const totalPrice = computed(() =>
-        cartItems.value.reduce((total, item) => total + item.price * item.quantity, 0)
-    );
-
-    const incrementItem = (item: { id: number; name: string }) => {
-      cartStore.incrementItem(item);
-    };
-
-    const decrementItem = (item: { id: number; name: string }) => {
-      cartStore.decrementItem(item);
-    };
-
     return {
-      cartItems,
-      totalPrice,
-      incrementItem,
-      decrementItem,
+      cartStore,
     };
+  },
+  computed: {
+    cartItems() {
+      return this.cartStore.items;
+    },
+    totalPrice() {
+      return this.cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+    },
+  },
+  methods: {
+    incrementItem(item: { id: number; name: string }) {
+      this.cartStore.incrementItem(item);
+    },
+    decrementItem(item: { id: number; name: string }) {
+      this.cartStore.decrementItem(item);
+    },
   },
 });
 </script>
-
 <template>
   <div class="cart-container p-6 bg-gray-900 text-white rounded-lg shadow-md">
     <br /><br />
