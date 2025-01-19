@@ -1,0 +1,79 @@
+{
+  "reviews": [
+    {
+      "username": "3DPrintFanatic",
+      "rating": 5,
+      "comment": "Amazing selection of filaments and great customer service! Highly recommend."
+    },
+    {
+      "username": "TechBuilder77",
+      "rating": 4,
+      "comment": "Fast shipping and reliable printers. However, the packaging could be better."
+    },
+    {
+      "username": "MakerMom",
+      "rating": 5,
+      "comment": "The resin I bought was top-quality. My prints have never looked better!"
+    },
+    {
+      "username": "ProtoNerd",
+      "rating": 3,
+      "comment": "Decent pricing, but customer support took too long to respond to my issue."
+    },
+    {
+      "username": "CreativeDesigns",
+      "rating": 5,
+      "comment": "Love their custom parts service. I got exactly what I needed for my project."
+    },
+    {
+      "username": "PrinterGuru",
+      "rating": 4,
+      "comment": "High-quality filament, but the website navigation could be improved."
+    },
+    {
+      "username": "3DWizard",
+      "rating": 5,
+      "comment": "Excellent product range and competitive prices. Will shop again soon!"
+    },
+    {
+      "username": "InnoMaker",
+      "rating": 2,
+      "comment": "Disappointed with the printer I received. It had missing parts."
+    },
+    {
+      "username": "TinkerTime",
+      "rating": 4,
+      "comment": "Great selection, but shipping costs are a bit high for international orders."
+    },
+    {
+      "username": "DIYDreamer",
+      "rating": 5,
+      "comment": "The tutorials on their site helped me fix my printer. Fantastic resource!"
+    },
+    {
+      "username": "FilamentFan",
+      "rating": 5,
+      "comment": "My filament order arrived quickly and prints perfectly. Great experience!"
+    },
+    {
+      "username": "PrecisionPrints",
+      "rating": 3,
+      "comment": "The quality control could be better. I received a defective nozzle."
+    },
+    {
+      "username": "GadgetGuy",
+      "rating": 4,
+      "comment": "Responsive customer service, but shipping was slower than expected."
+    },
+    {
+      "username": "RapidMaker",
+      "rating": 5,
+      "comment": "Amazing quality products and very user-friendly site. Highly satisfied!"
+    },
+    {
+      "username": "PrintCrafter",
+      "rating": 4,
+      "comment": "Good pricing on bundles, but the tracking system needs improvement."
+    }
+  ]
+}

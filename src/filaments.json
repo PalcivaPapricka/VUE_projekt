@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Filament black",
+    "description": "Black PLA filament",
+    "price": 25.50,
+    "image": "black.webp"
+  },
+  {
+    "id": 2,
+    "name": "Filament blue",
+    "description": "Blue PGE filament",
+    "price": 15.25,
+    "image": "blue.webp"
+  },
+  {
+    "id": 3,
+    "name": "Filament orange",
+    "description": "Orange PLA filament",
+    "price": 30.00,
+    "image": "orange.webp"
+  },
+  {
+    "id": 4,
+    "name": "Filament white",
+    "description": "White ABS filament",
+    "price": 12.99,
+    "image": "white.webp"
+  },
+  {
+    "id": 5,
+    "name": "Filament neon green",
+    "description": "Neon green PLA filament",
+    "price": 35.60,
+    "image": "green.webp"
+  }
+]

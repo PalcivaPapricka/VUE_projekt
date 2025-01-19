@@ -1,0 +1,32 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%; /* Ensure the body and html take up the full height */
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Full height for the app container */
+}
+
+footer {
+  width: 100%; /* Ensure the footer stretches across the full width */
+  position: relative;
+  bottom: 0;
+  padding: 20px;
+  background: linear-gradient(to bottom, white, #f3f4f6);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+main {
+  flex-grow: 1; /* Main section takes up remaining space */
+}

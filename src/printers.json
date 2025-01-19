@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Bambu-labs",
+    "description": "High-performance 3D printer",
+    "price": 420.50,
+    "image": "bambu.webp"
+  },
+  {
+    "id": 2,
+    "name": "Creality ender 3",
+    "description": "Reliable and affordable printer",
+    "price": 310.00,
+    "image": "creality.webp"
+  },
+  {
+    "id": 3,
+    "name": "Creality ender 3-S1",
+    "description": "Superior printing quality printer",
+    "price": 350.00,
+    "image": "ender.webp"
+  },
+  {
+    "id": 4,
+    "name": "Flsun V400",
+    "description": "High-speed professional printer",
+    "price": 680.99,
+    "image": "flsun.webp"
+  },
+  {
+    "id": 5,
+    "name": "SUNLU T3",
+    "description": "Excellent performance 3D printer",
+    "price": 599.99,
+    "image": "sunlu.webp"
+  }
+]
