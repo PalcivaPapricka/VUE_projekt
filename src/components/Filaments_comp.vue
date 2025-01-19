@@ -40,7 +40,7 @@ export default defineComponent({
             <p class="text-sm text-gray-600 mt-2">{{ filament.description }}</p>
           </div>
           <div class="card-footer mt-4 p-4 flex justify-between items-center border-t border-gray-300">
-            <span class="text-xl font-semibold text-blue-600">{{ filament.price.toFixed(2) }}</span>
+            <span class="text-xl font-semibold text-blue-600">{{ filament.price.toFixed(2) }} €</span>
             <button
                 class="card-button flex items-center justify-center text-white bg-green-500 hover:bg-green-600 p-2 rounded-full transition duration-300"
                 @click="addToCart(filament)">
@@ -71,7 +71,7 @@ export default defineComponent({
             <p class="text-sm text-gray-600 mt-2">{{ printer.description }}</p>
           </div>
           <div class="card-footer mt-4 p-4 flex justify-between items-center border-t border-gray-300">
-            <span class="text-xl font-semibold text-blue-600">{{ printer.price.toFixed(2) }}</span>
+            <span class="text-xl font-semibold text-blue-600">{{ printer.price.toFixed(2) }} €</span>
             <button
                 class="card-button flex items-center justify-center text-white bg-green-500 hover:bg-green-600 p-2 rounded-full transition duration-300"
                 @click="addToCart(printer)">
@@ -104,7 +104,7 @@ export default defineComponent({
             <p class="text-sm text-gray-600 mt-2">{{ accesory.description }}</p>
           </div>
           <div class="card-footer mt-4 p-4 flex justify-between items-center border-t border-gray-300">
-            <span class="text-xl font-semibold text-blue-600">{{ accesory.price.toFixed(2) }}</span>
+            <span class="text-xl font-semibold text-blue-600">{{ accesory.price.toFixed(2) }} €</span>
             <button
                 class="card-button flex items-center justify-center text-white bg-green-500 hover:bg-green-600 p-2 rounded-full transition duration-300"
                 @click="addToCart(accesory)">

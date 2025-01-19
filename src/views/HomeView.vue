@@ -28,27 +28,27 @@ export default defineComponent({
       <h2 class="text-3xl font-semibold text-center mb-12">Featured Products</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img src="/img/ender.webp" alt="3D Printer" class="w-full h-56 object-cover rounded-md mb-4">
-          <h3 class="text-xl font-bold text-gray-900">XYZ 3D Printer</h3>
+          <img src="/img/printer.png" alt="3D Printer" class="w-full h-56 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-bold text-gray-900">Bamboo-labs 3D Printer</h3>
           <p class="text-gray-600 mt-2">High quality 3D printing for personal or professional use.</p>
           <div class="mt-4 flex justify-between items-center">
-            <span class="text-xl text-gray-600 font-semibold">$799.99</span>
+            <span class="text-xl text-gray-600 font-semibold">799.99€ </span>
           </div>
         </div>
         <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img src="/img/white.webp" alt="Filament" class="w-full h-56 object-cover rounded-md mb-4">
+          <img src="/img/filament.jpg" alt="Filament" class="w-full h-56 object-cover rounded-md mb-4">
           <h3 class="text-xl font-bold text-gray-900">PLA Filament - 1kg</h3>
           <p class="text-gray-600 mt-2">High-quality filament for smooth and durable prints.</p>
           <div class="mt-4 flex justify-between items-center">
-            <span class="text-xl text-gray-600 font-semibold">$29.99</span>
+            <span class="text-xl text-gray-600 font-semibold">29.99€ </span>
           </div>
         </div>
         <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img src="/img/stepper.webp" alt="3D Printer Accessories" class="w-full h-56 object-cover rounded-md mb-4">
+          <img src="/img/printer2.jpg" alt="3D Printer Accessories" class="w-full h-56 object-cover rounded-md mb-4">
           <h3 class="text-xl font-bold text-gray-900">3D Printer Accessory Kit</h3>
           <p class="text-gray-600 mt-2">Essential tools and accessories for your 3D printing needs.</p>
           <div class="mt-4 flex justify-between items-center">
-            <span class="text-xl text-gray-600 font-semibold">$49.99</span>
+            <span class="text-xl text-gray-600 font-semibold">49.99€ </span>
           </div>
         </div>
       </div>
